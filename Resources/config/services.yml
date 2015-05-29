@@ -1,0 +1,6 @@
+services:
+    united.chunk.collection:
+        class: United\ChunkBundle\Form\ChunkCollectionType
+        arguments: [ @doctrine.orm.entity_manager ]
+        tags:
+            - { name: form.type, alias: united_chunk_collection }

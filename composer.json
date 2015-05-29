@@ -1,0 +1,26 @@
+{
+  "name": "franzwilding/united-chunk-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony UnitedChunkBundle, polymorphic collection type for United CMS",
+  "keywords": [
+    "CMS",
+    "Collection",
+    "Form",
+    "United"
+  ],
+  "homepage": "https://github.com/franzwilding/UnitedChunkBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Franz Wilding",
+      "email": "franz@2robots.at"
+    }
+  ],
+  "require": {
+    "twig/extensions": "~1.0",
+    "franzwilding/united-core-bundle": "0.1.*"
+  },
+  "autoload": {
+    "psr-4": {"United\\ChunkBundle\\": ""}
+  }
+}
