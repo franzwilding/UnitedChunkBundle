@@ -25,7 +25,7 @@ UnitedOne.modules.UnitedChunk = {
             var chunks  = [];
             var current = null;
 
-            $('div[data-chunk-chunk="data-chunk-chunk"]', context).each(function(){
+            $('div[data-chunk-chunk="data-chunk-chunk"]', $(this)).each(function(){
                 chunks[$(this).data('chunk-id')] = $(this);
                 t.hideChunk($(this));
                 if($(this).find('input[name$="[id]"]').val()) {
@@ -34,7 +34,7 @@ UnitedOne.modules.UnitedChunk = {
                 }
             });
 
-            var select = $('div[data-chunk-select="data-chunk-select"]', context);
+            var select = $('div[data-chunk-select="data-chunk-select"]', $(this));
             $('input[type="radio"]', select).change(function(){
                 if(current) {
                     t.hideChunk(current);
