@@ -24,9 +24,8 @@ UnitedOne.modules.UnitedChunk = {
 
             var chunks  = [];
             var current = null;
-
-            var select = $('div[data-chunk-select="data-chunk-select"]', context);
-            $('div[data-chunk-chunk="data-chunk-chunk"]', context).each(function(){
+            var select = $('div[data-chunk-select="data-chunk-select"]', $(this));
+            $('div[data-chunk-chunk="data-chunk-chunk"]', $(this)).each(function(){
                 chunks[$(this).data('chunk-id')] = $(this);
                 t.hideChunk($(this));
                 if($(this).find('input[name$="[id]"]').val()) {
