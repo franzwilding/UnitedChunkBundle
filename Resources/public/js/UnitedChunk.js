@@ -25,6 +25,8 @@ UnitedOne.modules.UnitedChunk = {
             var chunks  = [];
             var current = null;
             var select = $('div[data-chunk-select="data-chunk-select"]', $(this));
+            select.addClass('inline');
+
             $('div[data-chunk-chunk="data-chunk-chunk"]', $(this)).each(function(){
                 chunks[$(this).data('chunk-id')] = $(this);
                 t.hideChunk($(this));
